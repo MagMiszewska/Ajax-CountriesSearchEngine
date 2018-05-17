@@ -3,6 +3,15 @@ var countriesList = $('#countries');
 
 $('#search').click(searchCountries);
 
+var input = document.getElementById('country-name');
+
+input.addEventListener('keyup', function (event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.getElementById('search').click();
+  }
+});
+
 function searchCountries() {
   var countryName = $('#country-name').val();
   if (!countryName.length) countryName = 'Poland';
