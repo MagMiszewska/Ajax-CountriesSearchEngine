@@ -32,7 +32,7 @@ function showCountriesList(resp) {
       .append($('<p>').text('Region: ' + item.region))
       .append($('<p>').text('Subregion: ' + item.subregion))
       .append($('<p>').text('Area: ' + item.area))
-      .append($('<p>').text('Population: ' + item.population))      
+      .append($('<p>').text('Population: ' + item.population))
       .appendTo(countriesList);
   });
 }
