@@ -1,0 +1,26 @@
+body {
+    background-color: #20336d;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+h3 {
+    color: #20336d;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.result-box {
+    background-color: #3a72bd;
+}
+
+li img {
+    width: 100px;
+    height: auto;
+    margin-top: 5px;
+}
