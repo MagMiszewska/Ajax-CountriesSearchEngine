@@ -19,7 +19,10 @@ function searchCountries() {
     url: url + countryName,
     method: 'GET',
     success: showCountriesList
-  });
+  })
+    .fail(function () {
+      $('#countries').text('No results for your search query. Please try again.');
+    });
 }
 
 function showCountriesList(resp) {
